@@ -1,0 +1,9 @@
+en:
+  errors:
+    messages:
+      not_alpha_numeric: "can only contain alphanumeric characters"
+      word_too_long: "is too long (maximum is %{count} words)"
+      word_too_short: "is too short (minimum is %{count} words)"
+      word_wrong_length: "is the wrong length (should be %{count} words)"
+      in_blacklist: "is a reserved name (%{word} is not allowed)"
+      contains_blacklist: "is a reserved name (%{word} is not allowed)"

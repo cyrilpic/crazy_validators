@@ -41,7 +41,7 @@ module CrazyValidators
         return options[:with_array]
       elsif options.key? :with_model
         model = options[:with_model]
-        unless model.is_a?(Class)
+        if model.is_a?(String) || model.is_a?(Symbol)
           model = model.to_s.camelize.constantize
         end
         raise ArgumentError, ":with_model must be a model (does not respond to 'all')" unless model.respond_to? :all

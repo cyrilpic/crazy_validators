@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "crazy_validators"
   gem.homepage = "http://github.com/cyrilpic/crazy_validators"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{ Adds some validation methods for ActiveModel models }
+  gem.description = %Q{ CrazyValidators enables easy validation of attributs of an ActiveModel class, such as alphanumericality, presence in a Blacklist. }
   gem.email = "Cyril@picard.ch"
   gem.authors = ["Cyril Picard"]
   # dependencies defined in Gemfile

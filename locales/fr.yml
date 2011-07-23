@@ -1,0 +1,10 @@
+fr:
+  errors:
+    messages:
+      not_alpha_numeric: "ne peut contenir que des caractères alpha-numérique"
+      not_a_slug: "contient des caractères interdits."
+      word_too_long: "est trop long (maximum %{count} mots)"
+      word_too_short: "est trop court (minimum %{count} mots)"
+      word_wrong_length: "n'a pas la bonne longueur (devrait être de %{count} mots)"
+      in_blacklist: "est un nom réservé (%{word} n'est pas autorisé)"
+      contains_blacklist: "est un nom réservé (%{word} n'est pas autorisé)"

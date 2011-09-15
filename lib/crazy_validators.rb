@@ -7,9 +7,7 @@ module CrazyValidators
   autoload :WordCountValidator
   autoload :BlacklistValidator
   autoload :SlugValidator
-  if Object.const_defined? 'OEmbed'
-    autoload :OEmbedUrlValidator
-  end
+  autoload :OEmbedUrlValidator
 end
 
 require 'active_support/i18n'

@@ -18,7 +18,7 @@ module CrazyValidators
       OEmbed::Providers.register_all
       begin
         res = OEmbed::Providers.get(value)
-        unless type.any? { |t| res.call(t+'?') }
+        unless type.any? { |t| res.send(t+'?') }
           error_options[:required_type] = type.join(", ")
           record.errors.add(attribute, :oembed_not_right_type, error_options)
         end

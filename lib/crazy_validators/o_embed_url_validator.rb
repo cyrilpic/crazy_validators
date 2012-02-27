@@ -15,7 +15,7 @@ module CrazyValidators
       type = [options[:type]].flatten.map(&:to_s).keep_if do |e|
         AUTHORIZED_TYPES.include? e
       end
-      if record.send(attribute + "_changed?")
+      if record.send(attribute.to_s + "_changed?")
         OEmbed::Providers.register_all
         begin
           res = OEmbed::Providers.get(value)

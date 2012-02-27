@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{crazy_validators}
-  s.version = "0.1.0"
+  s.name = "crazy_validators"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = [%q{Cyril Picard}]
-  s.date = %q{2011-07-06}
-  s.description = %q{ CrazyValidators enables easy validation of attributs of an ActiveModel class, such as alphanumericality, presence in a Blacklist. }
-  s.email = %q{Cyril@picard.ch}
+  s.authors = ["Cyril Picard"]
+  s.date = "2012-02-27"
+  s.description = " CrazyValidators enables easy validation of attributs of an ActiveModel class, such as alphanumericality, presence in a Blacklist. "
+  s.email = "Cyril@picard.ch"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -29,16 +29,19 @@ Gem::Specification.new do |s|
     "lib/crazy_validators/alpha_numericality_validator.rb",
     "lib/crazy_validators/blacklist/default.yml",
     "lib/crazy_validators/blacklist_validator.rb",
+    "lib/crazy_validators/o_embed_url_validator.rb",
+    "lib/crazy_validators/slug_validator.rb",
     "lib/crazy_validators/word_count_validator.rb",
     "locales/en.yml",
+    "locales/fr.yml",
     "test/helper.rb",
     "test/test_crazy_validators.rb"
   ]
-  s.homepage = %q{http://github.com/cyrilpic/crazy_validators}
-  s.licenses = [%q{MIT}]
-  s.require_paths = [%q{lib}]
-  s.rubygems_version = %q{1.8.5}
-  s.summary = %q{Adds some validation methods for ActiveModel models}
+  s.homepage = "http://github.com/cyrilpic/crazy_validators"
+  s.licenses = ["MIT"]
+  s.require_paths = ["lib"]
+  s.rubygems_version = "1.8.15"
+  s.summary = "Adds some validation methods for ActiveModel models"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3

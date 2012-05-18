@@ -1,3 +1,4 @@
+require 'active_model'
 module CrazyValidators
   class BooleanValidator < ActiveModel::EachValidator
     def validate_each(record, attribute, value)

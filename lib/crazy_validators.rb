@@ -8,6 +8,7 @@ module CrazyValidators
   autoload :BlacklistValidator
   autoload :SlugValidator
   autoload :OEmbedUrlValidator
+  autoload :BooleanValidator
 end
 
 require 'active_support/i18n'

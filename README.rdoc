@@ -1,5 +1,7 @@
 = CrazyValidators
 
+{<img src="https://secure.travis-ci.org/cyrilpic/crazy_validators.png?branch=master" alt="Build Status" />}[http://travis-ci.org/cyrilpic/crazy_validators]
+
 Description goes here.
 
 == Contributing to crazy_validators

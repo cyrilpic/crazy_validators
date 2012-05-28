@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "crazy_validators"
-  s.version = "0.2.0"
+  s.version = "0.2.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Cyril Picard"]
@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     ".document",
+    ".travis.yml",
     "Gemfile",
     "LICENSE.txt",
     "README.rdoc",
@@ -59,7 +60,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<shoulda>, [">= 0"])
       s.add_development_dependency(%q<bundler>, ["~> 1.1.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.8.0"])
-      s.add_development_dependency(%q<rcov>, [">= 0"])
+      s.add_development_dependency(%q<simplecov>, [">= 0"])
       s.add_development_dependency(%q<to_slug>, [">= 0"])
       s.add_development_dependency(%q<ruby-oembed>, [">= 0"])
     else
@@ -68,7 +69,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<shoulda>, [">= 0"])
       s.add_dependency(%q<bundler>, ["~> 1.1.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.8.0"])
-      s.add_dependency(%q<rcov>, [">= 0"])
+      s.add_dependency(%q<simplecov>, [">= 0"])
       s.add_dependency(%q<to_slug>, [">= 0"])
       s.add_dependency(%q<ruby-oembed>, [">= 0"])
     end
@@ -78,7 +79,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<shoulda>, [">= 0"])
     s.add_dependency(%q<bundler>, ["~> 1.1.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.8.0"])
-    s.add_dependency(%q<rcov>, [">= 0"])
+    s.add_dependency(%q<simplecov>, [">= 0"])
     s.add_dependency(%q<to_slug>, [">= 0"])
     s.add_dependency(%q<ruby-oembed>, [">= 0"])
   end

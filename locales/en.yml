@@ -10,3 +10,4 @@ en:
       contains_blacklist: "is a reserved name (%{word} is not allowed)"
       oembed_error: "could not be embedded"
       oembed_not_right_type: "is not of the correct type (allowed is : %{required_types})"
+      not_boolean: "should be yes or no"

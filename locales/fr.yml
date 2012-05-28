@@ -10,3 +10,4 @@ fr:
       contains_blacklist: "est un nom réservé (%{word} n'est pas autorisé)"
       oembed_error: "n'a pu être intégré"
       oembed_not_right_type: "ne correspond pas au format attendu (autorisé : %{required_format})"
+      not_boolean: "devrait être oui ou non"

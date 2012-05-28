@@ -1,4 +1,5 @@
 require 'active_model'
+require 'to_slug'
 
 module CrazyValidators
   class SlugValidator < ActiveModel::EachValidator

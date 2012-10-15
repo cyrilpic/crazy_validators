@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "crazy_validators"
-  s.version = "0.2.1"
+  s.version = "0.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Cyril Picard"]
-  s.date = "2012-05-28"
+  s.date = "2012-10-15"
   s.description = " CrazyValidators enables easy validation of attributs of an ActiveModel class, such as alphanumericality, presence in a Blacklist. "
   s.email = "Cyril@picard.ch"
   s.extra_rdoc_files = [
@@ -36,10 +36,13 @@ Gem::Specification.new do |s|
     "lib/crazy_validators/word_count_validator.rb",
     "locales/en.yml",
     "locales/fr.yml",
+    "test/fixtures/alpha_num_model.rb",
     "test/fixtures/boolean_model.rb",
     "test/fixtures/simple_model.rb",
-    "test/fixtures/string_model.rb",
+    "test/fixtures/slug_model.rb",
+    "test/fixtures/word_count_model.rb",
     "test/helper.rb",
+    "test/test_alpha_numericality.rb",
     "test/test_boolean_validator.rb",
     "test/test_crazy_validators.rb",
     "test/test_slug_validator.rb",
@@ -48,7 +51,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/cyrilpic/crazy_validators"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.19"
+  s.rubygems_version = "1.8.24"
   s.summary = "Adds some validation methods for ActiveModel models"
 
   if s.respond_to? :specification_version then
@@ -58,7 +61,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<activemodel>, [">= 0"])
       s.add_runtime_dependency(%q<activesupport>, [">= 0"])
       s.add_development_dependency(%q<shoulda>, [">= 0"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.1.0"])
+      s.add_development_dependency(%q<bundler>, ["~> 1.2.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.8.0"])
       s.add_development_dependency(%q<simplecov>, [">= 0"])
       s.add_development_dependency(%q<to_slug>, [">= 0"])
@@ -67,7 +70,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<activemodel>, [">= 0"])
       s.add_dependency(%q<activesupport>, [">= 0"])
       s.add_dependency(%q<shoulda>, [">= 0"])
-      s.add_dependency(%q<bundler>, ["~> 1.1.0"])
+      s.add_dependency(%q<bundler>, ["~> 1.2.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.8.0"])
       s.add_dependency(%q<simplecov>, [">= 0"])
       s.add_dependency(%q<to_slug>, [">= 0"])
@@ -77,7 +80,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<activemodel>, [">= 0"])
     s.add_dependency(%q<activesupport>, [">= 0"])
     s.add_dependency(%q<shoulda>, [">= 0"])
-    s.add_dependency(%q<bundler>, ["~> 1.1.0"])
+    s.add_dependency(%q<bundler>, ["~> 1.2.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.8.0"])
     s.add_dependency(%q<simplecov>, [">= 0"])
     s.add_dependency(%q<to_slug>, [">= 0"])

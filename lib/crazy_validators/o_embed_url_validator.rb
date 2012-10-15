@@ -3,7 +3,7 @@ require 'oembed'
 module CrazyValidators
   class OEmbedUrlValidator < ActiveModel::EachValidator
     
-    RESERVED_OPTIONS  = [:type, :success]
+    RESERVED_OPTIONS  = [:type, :success, :maxwidth, :maxheight]
     AUTHORIZED_TYPES = ['video', 'link', 'photo', 'rich']
     
     def initialize(options)
@@ -15,10 +15,13 @@ module CrazyValidators
       type = [options[:type]].flatten.map(&:to_s).keep_if do |e|
         AUTHORIZED_TYPES.include? e
       end
+      oembed_options = options.extract!(:maxwidth, :maxheight).keep_if do |k,v|
+        v.is_a? Fixnum
+      end
       if record.send(attribute.to_s + "_changed?")
         OEmbed::Providers.register_all
         begin
-          res = OEmbed::Providers.get(value)
+          res = OEmbed::Providers.get(value, oembed_options)
           if type.any? { |t| res.send(t+'?') }
             unless options[:success].nil?
               if options[:success].is_a? Proc

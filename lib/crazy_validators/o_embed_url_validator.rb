@@ -15,7 +15,7 @@ module CrazyValidators
       type = [options[:type]].flatten.map(&:to_s).keep_if do |e|
         AUTHORIZED_TYPES.include? e
       end
-      oembed_options = options.keep_if do |k,v|
+      oembed_options = options.select do |k,v|
         [:maxwidth, :maxheight].include?(k) && v.is_a?(Fixnum)
       end
       if record.send(attribute.to_s + "_changed?")
